@@ -21,23 +21,26 @@ function roots_scripts() {
    */
   if (WP_ENV === 'development') {
     $assets = array(
-      'css'       => '/assets/css/main.css',
-      'js'        => '/assets/js/scripts.js',
-      'modernizr' => '/assets/vendor/modernizr/modernizr.js',
-      'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js'
+      'css'         => '/assets/css/main.css',
+      'js'          => '/assets/js/scripts.js',
+      'modernizr'   => '/assets/vendor/modernizr/modernizr.js',
+      'jquery'      => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js',
+      'fontawesome' => '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'
     );
   } else {
     $get_assets = file_get_contents(get_template_directory() . '/assets/manifest.json');
     $assets     = json_decode($get_assets, true);
     $assets     = array(
-      'css'       => '/assets/css/main.min.css?' . $assets['assets/css/main.min.css']['hash'],
-      'js'        => '/assets/js/scripts.min.js?' . $assets['assets/js/scripts.min.js']['hash'],
-      'modernizr' => '/assets/js/vendor/modernizr.min.js',
-      'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'
+      'css'         => '/assets/css/main.min.css?' . $assets['assets/css/main.min.css']['hash'],
+      'js'          => '/assets/js/scripts.min.js?' . $assets['assets/js/scripts.min.js']['hash'],
+      'modernizr'   => '/assets/js/vendor/modernizr.min.js',
+      'jquery'      => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
+      'fontawesome' => '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'
     );
   }
 
   wp_enqueue_style('roots_css', get_template_directory_uri() . $assets['css'], false, null);
+  wp_enqueue_style('fontawesome', $assets['fontawesome']);
 
   /**
    * jQuery is loaded using the same method from HTML5 Boilerplate:
