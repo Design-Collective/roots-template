@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9a80b5b2863cb67eadf1f0e3e95f5e46",
+    "hash": "c315d76a194eadf95bccbdea186069a6",
     "packages": [
         {
             "name": "composer/installers",
@@ -217,6 +217,50 @@
             "time": "2014-04-01 01:30:23"
         },
         {
+            "name": "roots/wp-h5bp-htaccess",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/wp-h5bp-htaccess.git",
+                "reference": "d0f9b5bdadec33169b0074c9a26f610886c61864"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/wp-h5bp-htaccess/zipball/d0f9b5bdadec33169b0074c9a26f610886c61864",
+                "reference": "d0f9b5bdadec33169b0074c9a26f610886c61864",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw",
+                    "role": "Roots/Bedrock developer"
+                },
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs",
+                    "role": "Roots/Bedrock developer"
+                }
+            ],
+            "description": "HTML5 Boilerplate's .htaccess for WordPress",
+            "homepage": "http://roots.io/plugins/html5-boilerplate-htaccess/",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2014-06-07 21:14:41"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v1.0.9",
             "source": {
@@ -266,6 +310,26 @@
                 "environment"
             ],
             "time": "2014-10-16 14:50:21"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce",
+            "version": "2.2.10",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/woocommerce/",
+                "reference": "tags/2.2.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/woocommerce.2.2.10.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce/"
         }
     ],
     "packages-dev": [],
