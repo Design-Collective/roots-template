@@ -58,6 +58,21 @@ module.exports = function(grunt) {
         }
       }
     },
+    libsass: {
+      dev: {
+        files: [{
+            expand: true,
+            cwd: 'assets/sass',
+            src: ['main.scss'],
+            dest: 'assets/css',
+            ext: '.css'
+        }]
+      },
+      build: {
+        src: 'assets/sass/main.scss',
+        dest: 'assets/css/main.min.css'
+      }
+    },
     concat: {
       options: {
         separator: ';',
@@ -126,7 +141,7 @@ module.exports = function(grunt) {
           'assets/sass/*.scss',
           'assets/sass/**/*.scss'
         ],
-        tasks: ['sass:dev', 'autoprefixer:dev']
+        tasks: ['libsass:dev', 'autoprefixer:dev']
       },
       js: {
         files: [
@@ -157,13 +172,13 @@ module.exports = function(grunt) {
   ]);
   grunt.registerTask('dev', [
     'jshint',
-    'sass:dev',
+    'libsass:dev',
     'autoprefixer:dev',
     'concat'
   ]);
   grunt.registerTask('build', [
     'jshint',
-    'sass:build',
+    'libsass:build',
     'autoprefixer:build',
     'uglify',
     'modernizr',
