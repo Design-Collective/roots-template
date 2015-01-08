@@ -1,3 +1,17 @@
+// Include Compass Mixins
+@import "../vendor/compass-mixins/lib/_compass";
+@import "_mixins";
+
+// Icomoon
+@import "../vendor/icomoon/style";
+/*-----------
+  NOTE: To replace/update icomoon rename style.css in /icomoon to style.scss
+  Then run a find-replace from "fonts" to "../vendor/icomoon/fonts"
+ ------------*/
+
+// Fonts
+@import "_fonts.scss";
+
 // Bootstrap
 @import "_bootstrap.scss";
 
