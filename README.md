@@ -20,7 +20,7 @@ $ copy .env.example .env
 $ nano .env
 ```
 
-##2. Install PHP dependencies
+##2. Install PHP and front-end dependencies
 This installs Wordpress and some awesome plugins we've added.
 
 ```
