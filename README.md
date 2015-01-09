@@ -1,6 +1,6 @@
 #DC Roots Base Template
 
-Wordpress development starter theme based on [roots/bedrock]{https://github.com/roots/bedrock} and Bootstrap. Uses Grunt-Libsass for ultra-fast parsing, includes Icomoon webfont.
+Wordpress development starter theme based on [roots/bedrock](https://github.com/roots/bedrock) and Bootstrap. Uses Grunt-Libsass for ultra-fast parsing, includes Icomoon webfont.
  
 ##1. Prepare site directory
 
