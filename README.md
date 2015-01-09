@@ -1,6 +1,6 @@
 #DC Roots Base Template
 
-Wordpress development starter theme based on [roots/bedrock](https://github.com/roots/bedrock) and Bootstrap. Uses [Grunt-Libsass](https://www.npmjs.com/package/grunt-libsass) for ultra-fast parsing (with Compass mixins bautifully supplied by [Compass-Mixins](https://github.com/Igosuki/compass-mixins) and includes Icomoon webfont.
+Wordpress development starter theme based on [roots/bedrock](https://github.com/roots/bedrock) and Bootstrap. Uses [Grunt-Libsass](https://www.npmjs.com/package/grunt-libsass) for ultra-fast parsing (with Compass mixins bautifully supplied by [Compass-Mixins](https://github.com/Igosuki/compass-mixins)) and includes Icomoon webfont.
  
 ##1. Prepare site directory
 
