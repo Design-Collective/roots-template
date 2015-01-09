@@ -1,14 +1,16 @@
-//$navbar-default-brand-color
-//$navbar-default-brand-hover-color
+/* BOOTSTRAP VARIABLES */
+
+$navbar-default-brand-color:            #000;
+$navbar-default-brand-hover-color:      #555;
 
 $navbar-default-bg:                     #FFF;
 $navbar-default-color:                  #444;
 $navbar-default-link-color:             #000;
 $navbar-default-link-hover-color:       #555;
 
-$navbar-height:                         136px;
-$navbar-padding-vertical:               0px;
-$nav-link-padding:                      10px 9px;
+$navbar-height:                         80x;
+$navbar-padding-vertical:               20px;
+$nav-link-padding:                      10px 10px;
 
 // Grid settings
 // -------------------------
@@ -35,7 +37,7 @@ $icon-font-path:        "../vendor/bootstrap-sass-official/assets/fonts/";
 
 $headings-font-weight: normal;
 $font-size-base: 15px;
-$headings-font-family:  "Coolvetica Regular", "Helvetica Neue", "Helvetica", "Arial", _sans-serif;
+$headings-font-family:  /* "Myfont", */ "Helvetica Neue", "Helvetica", "Arial", _sans-serif;
 
 // Transitions
 // -------------------------

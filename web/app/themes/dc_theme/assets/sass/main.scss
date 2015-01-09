@@ -1,3 +1,7 @@
+//
+// Main stylesheet file
+//
+
 // Include Compass Mixins
 @import "../vendor/compass-mixins/lib/_compass";
 @import "_mixins";
@@ -9,8 +13,9 @@
   Then run a find-replace from "fonts" to "../vendor/icomoon/fonts"
  ------------*/
 
-// Fonts
-@import "_fonts.scss";
+// Typography
+@import "_typography.scss";
+@import "_icomoon.scss";            // Import Icomoon
 
 // Bootstrap
 @import "_bootstrap.scss";

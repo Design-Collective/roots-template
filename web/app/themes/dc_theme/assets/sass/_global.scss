@@ -1,0 +1,23 @@
+//
+// Global styles
+//
+
+/* Uppercase headings */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  text-transform: uppercase;
+}
+
+/* Box-sizing reset */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Disable <a> underline on hover */
+a:hover, a:focus {
+  text-decoration: none;
+}
